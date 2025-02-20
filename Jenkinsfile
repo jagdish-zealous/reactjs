@@ -19,7 +19,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                bat 'xcopy /E /I build C:\\deploy\\my-react-app\\' /Y
+                bat 'xcopy /Y /E /I build C:\\deploy\\my-react-app\\' 
             }
         }
     }
