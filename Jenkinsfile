@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {nodejs "nodejs"}
     triggers {
-        pollSCM('* * * * *') // Runs every minute (use sparingly)
+        pollSCM('H/5 * * * *') // Runs every minute (use sparingly)
     }
     stages {
         stage('Install Dependencies') {
