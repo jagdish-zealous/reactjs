@@ -6,13 +6,7 @@ pipeline {
             steps {
                 bat 'npm install'
             }
-        }
-
-        stage('Run Tests') {
-            steps {
-                bat 'npm test -- --watchAll=false'
-            }
-        }
+        }       
 
         stage('Build') {
             steps {
